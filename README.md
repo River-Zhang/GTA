@@ -5,4 +5,5 @@ Official repository for NeurIPS 2023 paper "Global-correlated 3D-decoupling Tran
 Codes coming soon.
 
 Project page: https://river-zhang.github.io/GTA-projectpage/
+
 Paper available at: https://arxiv.org/abs/2309.13524
