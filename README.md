@@ -30,9 +30,11 @@ If this work is helpful for your research, please consider citing the following 
 ```
 
 # Acknowledgement 
-Our code is mainly based on [ICON](https://github.com/YuliangXiu/ICON) and many thanks to the following open-source projects:
+Our implementation is mainly based on [ICON](https://github.com/YuliangXiu/ICON) and many thanks to the following open-source projects:
 * [ICON](https://github.com/YuliangXiu/ICON)
 * [ECON](https://github.com/YuliangXiu/ECON)
 * [PIFu](https://github.com/shunsukesaito/PIFu)
 
-Related papers about 3D avatars: https://github.com/pansanity666/Awesome-Avatars
+In addition, we sincerely thank [Yuliang Xiu](https://github.com/YuliangXiu), the author of [ICON](https://github.com/YuliangXiu/ICON) and [ECON](https://github.com/YuliangXiu/ECON) for resolving many of our concerns in GitHub Issues.
+
+More related papers about 3D avatars: https://github.com/pansanity666/Awesome-Avatars
