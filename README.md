@@ -30,7 +30,7 @@ If this work is helpful for your research, please consider citing the following 
 ```
 
 # Acknowledgement 
-Many thanks to the following open-source projects:
+Our code is mainly based on [ICON](https://github.com/YuliangXiu/ICON) and many thanks to the following open-source projects:
 * [ICON](https://github.com/YuliangXiu/ICON)
 * [ECON](https://github.com/YuliangXiu/ECON)
 * [PIFu](https://github.com/shunsukesaito/PIFu)
