@@ -1,5 +1,5 @@
 
-# GTA
+# Official Implementation for GTA (NeurIPS 2023)
 > **Global-correlated 3D-decoupling Transformer for Clothed Avatar Reconstruction (NeurIPS 2023)** [[Paper](https://arxiv.org/abs/2309.13524)] [[Website](https://river-zhang.github.io/GTA-projectpage/)]
 
 # News 
