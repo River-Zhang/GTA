@@ -5,7 +5,11 @@
 # News 
 - **[2023/9/26]** We release the arXiv version ([Paper in arXiv](https://arxiv.org/abs/2309.13524))
 
+# My TODO List
 
+- [ ] Hugging Face
+- [ ] Release code
+- [x] Release paper
 
 
 # Introduction
