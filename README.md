@@ -21,12 +21,12 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
 
 # Installation
 
-- Ubuntu 20 / 18, (Windows as well, see [issue#7](https://github.com/YuliangXiu/ECON/issues/7))
-- **CUDA=11.6, GPU Memory > 12GB**
+- Ubuntu 20 / 18
+- GCC = 7.5.0
+- **CUDA=11.3, GPU Memory > 12GB**
 - Python = 3.8
-- PyTorch >= 1.13.0 (official [Get Started](https://pytorch.org/get-started/locally/))
-- Cupy >= 11.3.0 (offcial [Installation](https://docs.cupy.dev/en/stable/install.html#installing-cupy-from-pypi))
-- PyTorch3D = 0.7.1 (official [INSTALL.md](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md), recommend [install-from-local-clone](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md#2-install-from-a-local-clone))
+- PyTorch = 1.13.0 (official [Get Started](https://pytorch.org/get-started/locally/))
+- PyTorch3D (official [INSTALL.md](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md), recommend [install-from-local-clone](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md#2-install-from-a-local-clone))
 
 Our model uses a environment similar to [ICON](https://github.com/YuliangXiu/ICON), please follow the [ICON Installation](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) to install the environment.
 
