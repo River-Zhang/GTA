@@ -3,13 +3,14 @@
 > **Global-correlated 3D-decoupling Transformer for Clothed Avatar Reconstruction (NeurIPS 2023)** [[Paper](https://arxiv.org/abs/2309.13524)] [[Website](https://river-zhang.github.io/GTA-projectpage/)]
 
 # News 
+- **[2023/11/30]** We release code including inference and testing.
 - **[2023/9/26]** We release the arXiv version ([Paper in arXiv](https://arxiv.org/abs/2309.13524)).
 
 # TODO
 
 - [ ] Hugging Face
-- [ ] Release code
-- [x] Release paper
+- [√] Release code
+- [√] Release paper
 
 
 # Introduction
@@ -18,18 +19,58 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
 ![framework](docs/src/model-structure_small.jpg)
 
 
+# Installation
+
+- Ubuntu 20 / 18, (Windows as well, see [issue#7](https://github.com/YuliangXiu/ECON/issues/7))
+- **CUDA=11.6, GPU Memory > 12GB**
+- Python = 3.8
+- PyTorch >= 1.13.0 (official [Get Started](https://pytorch.org/get-started/locally/))
+- Cupy >= 11.3.0 (offcial [Installation](https://docs.cupy.dev/en/stable/install.html#installing-cupy-from-pypi))
+- PyTorch3D = 0.7.1 (official [INSTALL.md](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md), recommend [install-from-local-clone](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md#2-install-from-a-local-clone))
+
+Our model uses a environment similar to [ICON](https://github.com/YuliangXiu/ICON), please follow the [ICON Installation](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) to install the environment.
+
+Please download the [checkpoint](https://drive.google.com/file/d/1zgpW8A0-sc24o-e24RphO-h9qxo-DRth/view?usp=sharing) and place them in ./data/ckpt
+
+Please follow [ICON](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) to download the extra data, such as HPS and SMPL.
+
+# Inference
+
+
+```bash
+
+
+python -m apps.infer -cfg ./configs/GTA.yaml -gpu 0 -in_dir ./examples -out_dir ./results -loop_smpl 100 -loop_cloth 200 -hps_type pixie
+
+```
+
+
+
+# Testing
+
+```bash
+# 1. Register at http://icon.is.tue.mpg.de/ or https://cape.is.tue.mpg.de/
+# 2. Download CAPE testset (Easy: 50, Hard: 100)
+bash fetch_cape.sh 
+# 3. Check CAPE testset via 3D visualization
+python -m lib.dataloader_demo -v -c ./configs/train/icon-filter.yaml -d cape
+
+# evaluation
+python -m apps.train -cfg ./configs/train/GTA.yaml -test
+
+# TIP: the default "mcube_res" is 256 in apps/train.
+```
+
 
 # Bibtex
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
 ```
-@misc{zhang2023globalcorrelated,
+@inproceedings{zhang2023globalcorrelated,
       title={Global-correlated 3D-decoupling Transformer for Clothed Avatar Reconstruction}, 
-      author={Zechuan Zhang and Li Sun and Zongxin Yang and Ling Chen and Yi Yang},
-      year={2023},
-      eprint={2309.13524},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      author={Zhang, Zechuan and Sun, Li and Yang, Zongxin and Chen, Ling and Yang, Yi},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+      year={2023}
 }
 ```
 
