@@ -23,7 +23,7 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
 
 - Ubuntu 20 / 18
 - GCC = 7.5.0
-- **CUDA=11.3, GPU Memory > 12GB**
+- **CUDA=11.3, GPU Memory > 20GB**
 - Python = 3.8
 - PyTorch = 1.13.0 (official [Get Started](https://pytorch.org/get-started/locally/))
 - PyTorch3D (official [INSTALL.md](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md), recommend [install-from-local-clone](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md#2-install-from-a-local-clone))
