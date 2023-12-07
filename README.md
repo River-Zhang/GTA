@@ -75,10 +75,12 @@ If this work is helpful for your research, please consider citing the following 
 ```
 
 # Acknowledgement 
-Our implementation is mainly based on [ICON](https://github.com/YuliangXiu/ICON) and many thanks to the following open-source projects:
+Our implementation is mainly based on [ICON](https://github.com/YuliangXiu/ICON) and [PIFu](https://github.com/shunsukesaito/PIFu), and many thanks to the following open-source projects:
 * [ICON](https://github.com/YuliangXiu/ICON)
 * [ECON](https://github.com/YuliangXiu/ECON)
 * [PIFu](https://github.com/shunsukesaito/PIFu)
+* [PIFuHD](https://github.com/facebookresearch/pifuhd)
+* [D-IF](https://github.com/psyai-net/D-IF_release)
 
 In addition, we sincerely thank [Yuliang Xiu](https://github.com/YuliangXiu), the author of [ICON](https://github.com/YuliangXiu/ICON) and [ECON](https://github.com/YuliangXiu/ECON) for resolving many of our concerns in GitHub Issues.
 
