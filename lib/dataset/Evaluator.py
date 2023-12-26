@@ -91,23 +91,19 @@ class Evaluator:
 
         
 
-        src_normal_arr = (make_grid(torch.cat(src_normal_imgs, dim=0), nrow=4)
-                          + 1.0) * 0.5  # [0,1]
-        tgt_normal_arr = (make_grid(torch.cat(tgt_normal_imgs, dim=0), nrow=4)
-                          + 1.0) * 0.5  # [0,1]
-        # src_norm = torch.norm(src_normal_arr, dim=0, keepdim=True)
-        # tgt_norm = torch.norm(tgt_normal_arr, dim=0, keepdim=True)
+        src_normal_arr = make_grid(torch.cat(src_normal_imgs, dim=0), nrow=4,padding=0)  # [0,1]
+        tgt_normal_arr = make_grid(torch.cat(tgt_normal_imgs, dim=0), nrow=4,padding=0)  # [0,1]
+        src_norm = torch.norm(src_normal_arr, dim=0, keepdim=True)
+        tgt_norm = torch.norm(tgt_normal_arr, dim=0, keepdim=True)
 
-        # src_norm[src_norm == 0.0] = 1.0
-        # tgt_norm[tgt_norm == 0.0] = 1.0
+        src_norm[src_norm == 0.0] = 1.0
+        tgt_norm[tgt_norm == 0.0] = 1.0
 
-        # src_normal_arr /= src_norm
-        # tgt_normal_arr /= tgt_norm
+        src_normal_arr /= src_norm
+        tgt_normal_arr /= tgt_norm
 
-        # # sim_mask = self.get_laplacian_2d(tgt_normal_arr).to(self.device)
-
-        # src_normal_arr = (src_normal_arr + 1.0) * 0.5
-        # tgt_normal_arr = (tgt_normal_arr + 1.0) * 0.5
+        src_normal_arr = (src_normal_arr + 1.0) * 0.5
+        tgt_normal_arr = (tgt_normal_arr + 1.0) * 0.5
 
 
         error = ((
