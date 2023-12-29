@@ -3,6 +3,7 @@
 > **Global-correlated 3D-decoupling Transformer for Clothed Avatar Reconstruction (NeurIPS 2023)** [[Paper](https://arxiv.org/abs/2309.13524)] [[Website](https://river-zhang.github.io/GTA-projectpage/)]
 
 # News 
+- **[2023/12/29]** We are thrilled to announce the release of our latest model, [SIFU](https://github.com/River-Zhang/SIFU), offering enhanced geometry and texture reconstruction capabilities!
 - **[2023/11/30]** We release code including inference and testing.
 - **[2023/9/26]** We release the arXiv version ([Paper in arXiv](https://arxiv.org/abs/2309.13524)).
 
