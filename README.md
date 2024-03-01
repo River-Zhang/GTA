@@ -29,8 +29,16 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
 - PyTorch = 1.13.0 (official [Get Started](https://pytorch.org/get-started/locally/))
 - PyTorch3D (official [INSTALL.md](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md), recommend [install-from-local-clone](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md#2-install-from-a-local-clone))
 
-Our model uses a environment similar to [ICON](https://github.com/YuliangXiu/ICON), please follow the [ICON Installation](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) to install the environment.
+```bash
 
+git clone https://github.com/River-Zhang/GTA.git
+sudo apt-get install libeigen3-dev ffmpeg
+cd GTA
+conda env create -f environment.yaml
+conda activate gta
+pip install -r requirements.txt
+
+```
 Please download the [checkpoint](https://drive.google.com/file/d/1zgpW8A0-sc24o-e24RphO-h9qxo-DRth/view?usp=sharing) and place them in ./data/ckpt
 
 Please follow [ICON](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) to download the extra data, such as HPS and SMPL.
