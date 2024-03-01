@@ -54,7 +54,7 @@ python -m apps.infer -cfg ./configs/GTA.yaml -gpu 0 -in_dir ./examples -out_dir 
 # 2. Download CAPE testset (Easy: 50, Hard: 100)
 bash fetch_cape.sh 
 # 3. Check CAPE testset via 3D visualization
-python -m lib.dataloader_demo -v -c ./configs/train/icon-filter.yaml -d cape
+python -m lib.dataloader_demo -v -c ./configs/train/GTA.yaml -d cape
 
 # evaluation
 python -m apps.train -cfg ./configs/train/GTA.yaml -test
