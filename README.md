@@ -72,7 +72,7 @@ python -m apps.train -cfg ./configs/train/GTA.yaml -test
 
 
 # Bibtex
-If this work is helpful for your research, please consider citing the following BibTeX entry.
+If this work is helpful for your research, please consider citing the following BibTeX entries.
 
 ```
 @inproceedings{zhang2023globalcorrelated,
@@ -80,6 +80,15 @@ If this work is helpful for your research, please consider citing the following 
       author={Zhang, Zechuan and Sun, Li and Yang, Zongxin and Chen, Ling and Yang, Yi},
       booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
       year={2023}
+}
+
+@InProceedings{Zhang_2024_CVPR,
+    author    = {Zhang, Zechuan and Yang, Zongxin and Yang, Yi},
+    title     = {SIFU: Side-view Conditioned Implicit Function for Real-world Usable Clothed Human Reconstruction},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {9936-9947}
 }
 ```
 
